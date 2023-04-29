@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - que_travel_distance_time
   - que_places_to_visit
+  - que_restaurent
 
 responses:
   utter_greet:
@@ -38,3 +39,4 @@ session_config:
 actions: 
   - action_travel_distance_time
   - action_hello_world
+  - action_restaurent
