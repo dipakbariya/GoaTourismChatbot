@@ -1,0 +1,21 @@
+pandas
+bs4
+readability
+readability-lxml
+selenium
+lxml
+rasa[full]
+fastapi
+transformers
+uvicorn
+flask 
+rasa-model-report
+silence_tensorflow
+torch 
+torchvision 
+torchaudio --index-url https://download.pytorch.org/whl/cpu
+openpyxl
+pandas
+farm-haystack
+pygraphviz
+farm-haystack[elasticsearch]
