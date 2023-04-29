@@ -174,5 +174,27 @@ nlu:
     - What is the rating of Go with the Flow restaurant?
     - What type of food does Natti's Naturals serve?
 
+- intent: que_beaches
+  examples: |
+    - What water sports are available at Calangute Beach?
+    - Are there any restaurants at Baga Beach?
+    - What kind of facilities are available at Colva Beach?
+    - Can I go kayaking at Palolem Beach?
+    - Are there any resorts near Morjim Beach?
+    - What activities are popular at Arambol Beach?
+    - Are there any hotels at Vagator Beach?
+    - What kind of water sports can I do at Candolim Beach?
+    - Is there a beach volleyball court at Majorda Beach?
+    - Where can I go dolphin spotting near Morjim Beach?
+    - What are the best beaches in Goa for water sports?
+    - Can you recommend a beach in Goa that's good for families with kids?
+    - Which beach in Goa is the best for watching the sunset?
+    - Are there any beaches in Goa where I can go turtle watching?
+    - Which beach in Goa has the best shacks for food and drinks?
+    - What are the popular water sports activities available at Baga Beach?
+    - Can you suggest a good resort near Morjim Beach?
+    - What are the popular activities available at Palolem Beach?
+    - Are there any beaches in Goa where I can go paragliding?
+    - Which beaches in Goa have hotels and resorts nearby?
 
 

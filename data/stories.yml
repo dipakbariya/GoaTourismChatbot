@@ -39,3 +39,8 @@ stories:
   steps: 
   - intent: que_restaurent
   - action: action_restaurent
+
+- story: question related to beaches
+  steps: 
+  - intent: que_beaches
+  - action: action_beaches

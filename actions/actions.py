@@ -43,6 +43,7 @@ class ActionHelloWorld(Action):
 df_question_answer_model = tqa = pipeline(task="table-question-answering", model="google/tapas-large-finetuned-wtq")
 travel_df = pd.read_excel("csv/Goa_byNeha_v1.xlsx", sheet_name="How to reach")
 restaurent_df = pd.read_csv("csv/restaurent.csv")
+beaches_df = pd.read_csv("csv/beaches.csv")
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
@@ -71,5 +72,20 @@ class ActionHelloWorld(Action):
 
         question = tracker.latest_message["text"]
         answer = tqa(table=restaurent_df, query=question)['cells'][0]
+        dispatcher.utter_message(answer)
+        return []
+
+
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "beaches_beaches"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("beaches_beaches")
+
+        question = tracker.latest_message["text"]
+        answer = tqa(table=beaches_df, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []
