@@ -12,6 +12,7 @@ intents:
   - que_places_to_visit
   - que_restaurent
   - que_beaches
+  - que_sightseeing
 
 responses:
   utter_greet:
@@ -41,4 +42,5 @@ actions:
   - action_travel_distance_time
   - action_hello_world
   - action_restaurent
-  - beaches_beaches
+  - action_beaches
+  - action_sightseeing

@@ -44,3 +44,9 @@ stories:
   steps: 
   - intent: que_beaches
   - action: action_beaches
+
+
+- story: question related to sightseeing
+  steps: 
+  - intent: que_sightseeing
+  - action: action_sightseeing
