@@ -90,7 +90,7 @@ class ActionHelloWorld(Action):
         print("action_beaches")
 
         question = tracker.latest_message["text"]
-        answer = tqa(table=beaches_df, query=question)['cells'][0]
+        answer = df_question_answer_model(table=beaches_df, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []
 
@@ -104,6 +104,6 @@ class ActionHelloWorld(Action):
         print("action_sightseeing")
 
         question = tracker.latest_message["text"]
-        answer = tqa(table=sightseeing_df1, query=question)['cells'][0]
+        answer = df_question_answer_model(table=sightseeing_df1, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []
