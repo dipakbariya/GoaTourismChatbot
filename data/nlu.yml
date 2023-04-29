@@ -140,3 +140,39 @@ nlu:
     - What is Dona Paula, and why is it popular among tourists?
     - What is the Bohemian feel of Arambol Beach, and where is it located?
     - How far is Baga Beach from Panjim, and what makes it a popular nightlife destination?
+
+- intent: que_restaurent
+  examples: |
+    - What is the cuisine type of Fisherman's Wharf restaurant?
+    - What is the location of Mum's Kitchen restaurant?
+    - What is the price range of Gunpowder restaurant?
+    - What is the rating of Black Sheep Bistro restaurant?
+    - What type of food does Thirsty Bear serve?
+    - What is the rating of Burger Factory restaurant?
+    - What is the cuisine type of Viva Panjim restaurant?
+    - What is the rating of Vinayak Family Restaurant?
+    - What type of food does Fishland serve?
+    - What is the location of Baba's Wood Cafe restaurant?
+    - What is the rating of Sublime restaurant?
+    - What type of food does Cafe Real serve?
+    - What is the location of The Lazy Goose restaurant?
+    - What is the rating of Martin's Corner restaurant?
+    - What is the cuisine type of Cantare restaurant?
+    - What type of food does Bomra's serve?
+    - What is the rating of Ritz Classic restaurant?
+    - What is the cuisine type of Soul Souffle restaurant?
+    - What is the location of Navtara Veg Restaurant?
+    - What is the price range of Baba's Little Greece restaurant?
+    - What is the cuisine type of Cafe Bodega restaurant?
+    - What is the rating of Kamlabai restaurant?
+    - What is the price range of Fish Ka restaurant?
+    - What type of food does Guru Bar serve?
+    - What is the rating of Saraya Art Cafe restaurant?
+    - What is the cuisine type of Café Tato restaurant?
+    - What type of food does Pousada By The Beach serve?
+    - What is the price range of Burgers Factory restaurant?
+    - What is the rating of Go with the Flow restaurant?
+    - What type of food does Natti's Naturals serve?
+
+
+

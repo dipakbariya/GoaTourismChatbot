@@ -9,13 +9,13 @@ fastapi
 transformers
 uvicorn
 flask 
-rasa-model-report
+# rasa-model-report
 silence_tensorflow
-torch 
-torchvision 
-torchaudio --index-url https://download.pytorch.org/whl/cpu
+# torch 
+# torchvision 
+# torchaudio --index-url https://download.pytorch.org/whl/cpu
 openpyxl
 pandas
-farm-haystack
-pygraphviz
-farm-haystack[elasticsearch]
+# farm-haystack
+# pygraphviz
+# farm-haystack[elasticsearch]

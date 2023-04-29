@@ -34,3 +34,8 @@ stories:
   steps: 
   - intent: que_travel_distance_time
   - action: action_travel_distance_time
+
+- story: question related to restaurent
+  steps: 
+  - intent: que_restaurent
+  - action: action_restaurent

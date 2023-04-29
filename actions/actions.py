@@ -31,7 +31,7 @@ class ActionHelloWorld(Action):
     def name(self) -> Text:
         return "action_hello_world"
 
-    async def run(self, dispatcher: CollectingDispatcher,
+    def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         print("action_hello_world")
@@ -41,19 +41,35 @@ class ActionHelloWorld(Action):
 
 
 df_question_answer_model = tqa = pipeline(task="table-question-answering", model="google/tapas-large-finetuned-wtq")
-
 travel_df = pd.read_excel("csv/Goa_byNeha_v1.xlsx", sheet_name="How to reach")
+restaurent_df = pd.read_csv("csv/restaurent.csv")
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
         return "action_travel_distance_time"
 
-    async def run(self, dispatcher: CollectingDispatcher,
+    def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         print("action_travel_distance_time")
 
         question = tracker.latest_message["text"]
         answer = tqa(table=travel_df, query=question)['cells'][0]
+        dispatcher.utter_message(answer)
+        return []
+
+
+
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "action_restaurent"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("action_restaurent")
+
+        question = tracker.latest_message["text"]
+        answer = tqa(table=restaurent_df, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []
