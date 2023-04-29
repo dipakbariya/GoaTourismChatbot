@@ -1,0 +1,142 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: que_travel_distance_time
+  examples: |
+    - What is the distance between Bangalore and Goa?
+    - How long does it take to travel from Mumbai to Goa?
+    - What is the travel time from Hyderabad to Goa?
+    - How far is Delhi from Goa?
+    - How long does it take to travel from Pune to Goa?
+    - What is the distance between Ahmedabad and Goa?
+    - What is the travel time from Chennai to Goa?
+    - How far is Karwar from Goa?
+    - What is the travel time from Kolkata to Goa?
+    - How long does it take to travel from Mahabaleshwar to Goa?
+    - What is the distance between Jaipur and Goa?
+    - How far is Lonavala from Goa?
+    - What is the travel time from Amritsar to Goa?
+    - How long does it take to travel from Udaipur to Goa?
+    - What is the distance between Chandigarh and Goa?
+    - What is the travel time from Varanasi to Goa?
+    - How far is Jodhpur from Goa?
+    - What is the distance between Coorg and Goa?
+    - How long does it take to travel from Ernakulam to Goa?
+    - What is the travel time from Agra to Goa?
+    - How far is Manali from Goa?
+    - What is the distance between Wayanad and Goa?
+    - How long does it take to travel from Gurgaon to Goa?
+    - What is the travel time from Srinagar to Goa?
+    - How far is Shimla from Goa?
+    - What is the distance between Jaisalmer and Goa?
+    - How long does it take to travel from Munnar to Goa?
+    - What is the travel time from Alleppey to Goa?
+    - How far is Hisar from Goa?
+    - Which route is the shortest to reach Goa?
+
+- intent: que_places_to_visit
+  examples: | 
+    - What is the largest beach in North Goa?
+    - Where is Thalassa, and what type of cuisine does it serve?
+    - Where is Fort Aguada located, and what are its main attractions?
+    - What is the Basilica of Bom Jesus, and where is it located?
+    - What is the distance of Baga Beach from the city center, and what is it known for?
+    - Where is Butterfly Beach located, and how can one access it?
+    - Where is Dudhsagar Falls located, and what is the best time to visit it?
+    - What is Divar Island, and how can one reach it from Old Goa?
+    - What are some popular activities to do at Anjuna Beach?
+    - Is scuba diving popular in Goa, and what is the visibility like?
+    - What is the significance of Chapora Fort, and why is it also known as the 'Dil Chahta Hai Fort'?
+    - What are some popular souvenirs to buy in Goa, and where can one buy them?
+    - What is Dona Paula, and why is it popular among tourists?
+    - What is the Bohemian feel of Arambol Beach, and where is it located?
+    - How far is Baga Beach from Panjim, and what makes it a popular nightlife destination?
