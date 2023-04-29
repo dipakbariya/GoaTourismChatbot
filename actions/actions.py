@@ -44,6 +44,7 @@ df_question_answer_model = tqa = pipeline(task="table-question-answering", model
 travel_df = pd.read_excel("csv/Goa_byNeha_v1.xlsx", sheet_name="How to reach")
 restaurent_df = pd.read_csv("csv/restaurent.csv")
 beaches_df = pd.read_csv("csv/beaches.csv")
+sightseeing_df1 = pd.read_csv("csv/sightseeing1.csv")
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
@@ -78,14 +79,28 @@ class ActionHelloWorld(Action):
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
-        return "beaches_beaches"
+        return "action_beaches"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        print("beaches_beaches")
+        print("action_beaches")
 
         question = tracker.latest_message["text"]
         answer = tqa(table=beaches_df, query=question)['cells'][0]
+        dispatcher.utter_message(answer)
+        return []
+
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "action_sightseeing"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("action_sightseeing")
+
+        question = tracker.latest_message["text"]
+        answer = tqa(table=sightseeing_df1, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []

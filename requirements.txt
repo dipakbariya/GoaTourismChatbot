@@ -19,3 +19,4 @@ pandas
 # farm-haystack
 # pygraphviz
 # farm-haystack[elasticsearch]
+tensorflow-probability

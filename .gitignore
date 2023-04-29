@@ -11,3 +11,4 @@ venv
 .rasa 
 model_report.md
 /MYDATA
+.~lock*
