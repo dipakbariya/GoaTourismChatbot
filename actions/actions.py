@@ -43,7 +43,10 @@ class ActionHelloWorld(Action):
 df_question_answer_model = pipeline(task="table-question-answering", model="google/tapas-large-finetuned-wtq")
 travel_df = pd.read_excel("csv/Goa_byNeha_v1.xlsx", sheet_name="How to reach")
 restaurent_df = pd.read_csv("csv/restaurent.csv")
+beaches_df = pd.read_csv("csv/beaches.csv")
+sightseeing_df1 = pd.read_csv("csv/sightseeing1.csv")
 restaurent_df['rating'] = restaurent_df['rating'].apply(lambda x: str(x))
+
 
 class ActionHelloWorld(Action):
     def name(self) -> Text:
@@ -73,5 +76,34 @@ class ActionHelloWorld(Action):
         question = tracker.latest_message["text"]
         answer = df_question_answer_model(table=restaurent_df, query=question)['cells'][0]
         
+        dispatcher.utter_message(answer)
+        return []
+
+
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "action_beaches"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("action_beaches")
+
+        question = tracker.latest_message["text"]
+        answer = tqa(table=beaches_df, query=question)['cells'][0]
+        dispatcher.utter_message(answer)
+        return []
+
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "action_sightseeing"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("action_sightseeing")
+
+        question = tracker.latest_message["text"]
+        answer = tqa(table=sightseeing_df1, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []
