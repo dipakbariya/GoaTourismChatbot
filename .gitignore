@@ -3,8 +3,7 @@
 /notebook
 /models
 /random_stuff
-actions/__pycache__
-server/__pycache__
+*__pycache__
 env
 .env
 venv
