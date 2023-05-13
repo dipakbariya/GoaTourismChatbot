@@ -46,6 +46,7 @@ restaurent_df = pd.read_csv("csv/restaurent.csv")
 beaches_df = pd.read_csv("csv/beaches.csv")
 sightseeing_df1 = pd.read_csv("csv/sightseeing1.csv")
 restaurent_df['rating'] = restaurent_df['rating'].apply(lambda x: str(x))
+hotels_df = pd.read_csv("csv/validated/Hotel_list.csv")
 
 
 class ActionHelloWorld(Action):
@@ -105,5 +106,19 @@ class ActionHelloWorld(Action):
 
         question = tracker.latest_message["text"]
         answer = df_question_answer_model(table=sightseeing_df1, query=question)['cells'][0]
+        dispatcher.utter_message(answer)
+        return []
+    
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "action_hotels"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("action_hotels")
+
+        question = tracker.latest_message["text"]
+        answer = df_question_answer_model(table=hotels_df, query=question)['cells'][0]
         dispatcher.utter_message(answer)
         return []

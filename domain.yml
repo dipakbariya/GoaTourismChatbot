@@ -13,6 +13,8 @@ intents:
   - que_restaurent
   - que_beaches
   - que_sightseeing
+  - que_hotels
+
 
 responses:
   utter_greet:
@@ -44,3 +46,4 @@ actions:
   - action_restaurent
   - action_beaches
   - action_sightseeing
+  - action_hotels

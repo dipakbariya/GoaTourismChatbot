@@ -210,3 +210,20 @@ nlu:
     - What can I expect to see at the Goa State Museum?
     - Are there any other museums in Goa apart from the Goa State Museum and Ancestral Goa?
 
+- intent: que_hotels
+  examples: |
+    - Can you provide me with a list of guesthouses in North Goa that are valid until 2023?
+    - What is the name and address of the hotel with the highest number of beds in Bardez, North Goa?
+    - Can you give me a list of all the hotels in Candolim, Bardez, North Goa?
+    - Can you provide me with the contact details of the owner of Mermaids Guest House in Anjuna, Bardez, North Goa?
+    - Which hotel has the least number of rooms and beds?
+    - Can you give me a list of all the hotels in Pilerne, Bardez, North Goa?
+    - What are the types of hotels available ?
+    - What is the category of Deep Residency, and where is it located?
+    - Can you provide me with a list of all the hotels located in Anjuna, Bardez, North Goa?
+    - Which hotel has the most number of rooms and beds, and where is it located?
+    - What is the address of Andrade Guest House in Candolim, Bardez, North Goa?
+    - How many hotels are there in goa, and what is the total number of beds available across all hotels?
+    - Can you give me a list of all the hotels located in Calangute, Bardez, North Goa?
+    - What is the name of the hotel owned by Sylvester Jude Dsouza, and where is it located?
+    - How many hotels are located in Pilerne, Bardez, North Goa, and what are their names?

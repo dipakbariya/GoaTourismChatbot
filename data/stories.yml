@@ -50,3 +50,8 @@ stories:
   steps: 
   - intent: que_sightseeing
   - action: action_sightseeing
+
+- story: question related to hotels
+  steps:
+  - intent: que_hotels
+  - action: action_hotels
